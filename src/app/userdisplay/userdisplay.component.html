@@ -1,0 +1,9 @@
+<div class="container" *ngIf="userDisplaySelected">
+    <img [src]="'assets/images/'+userDisplaySelected.gender.toLowerCase()+'-icon.jpg'" width="200" height="200" alt="profile image">
+    <div style="margin: 10px;padding: 15px;">
+        <p style="padding: 5px;">Id : {{userDisplaySelected.userid}}</p>
+        <p style="padding: 5px;">Name : {{userDisplaySelected.username}}</p>
+        <p style="padding: 5px;">Gender : {{userDisplaySelected.gender}}</p>
+        <p style="padding: 5px;">Status : {{userDisplaySelected.status}}</p>
+    </div>
+</div>

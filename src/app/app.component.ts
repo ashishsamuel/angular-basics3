@@ -1,4 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { UpdateService } from './services/update.service';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,9 @@ export class AppComponent {
 
   display: boolean = false;
   tab: string = '';
+  constructor(private updateService:UpdateService){
+
+  }
 
   displayContent(){
     this.display = true;
@@ -21,6 +25,8 @@ export class AppComponent {
       case 'Home':
         this.tab = 'Home';
         console.log("inside home tab");
+        console.log("update service file name variable",this.updateService.name);
+        
         
         break;
       case 'About':

@@ -1,0 +1,16 @@
+<table class="table">
+    <tr>
+        <th>User Id</th>
+        <th>User Name</th>
+        <th>Gender</th>
+        <th>User Status</th>
+        <th>Display</th>
+    </tr>
+    <tr *ngFor="let user of users">
+        <td>{{user.userid}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.gender}}</td>
+        <td>{{user.status}}</td>
+        <td><button (click)="viewUserDetails(user)">View Details</button></td>
+    </tr>
+</table>
