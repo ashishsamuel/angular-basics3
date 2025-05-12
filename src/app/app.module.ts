@@ -8,6 +8,7 @@ import { Comp1Component } from './comp1/comp1.component';
 import { Comp2Component } from './comp2/comp2.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { UserdisplayComponent } from './userdisplay/userdisplay.component';
+import { ObservableLearnComponent } from './observable-learn/observable-learn.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { UserdisplayComponent } from './userdisplay/userdisplay.component';
     Comp1Component,
     Comp2Component,
     UserListComponent,
-    UserdisplayComponent
+    UserdisplayComponent,
+    ObservableLearnComponent
   ],
   imports: [
     BrowserModule,
